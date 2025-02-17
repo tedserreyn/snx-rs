@@ -192,7 +192,7 @@ Automatic channel reconnection will happen when running in the standalone mode, 
 | `Unknown device type`                                             | Make sure IPv6 protocol is enabled in the Linux kernel and 'xfrm' module can be loaded with `sudo modprobe xfrm`. Alternatively, use `esp-transport=tcpt` option.                        |
 | `error sending request for url (https://IP_OR_HOSTNAME/clients/)` | VPN server certificate is self-signed or untrusted. Use `ignore-server-cert` parameter to disable all HTTPS certificate checks. Use `no-cert-check` to only disable hostname validation. |
 | `No CCC session in reply!`                                        | Try the `client-mode` parameter with different values: `endpoint_security`, `secure_remote`, `secure_connect`                                                                            | 
-
+| `Error Error sending UDP request!`                                | Verify that the snx-rs service is running to receive the request`                                                                                                                        | 
 ## Contributing
 
 Pull requests, bug reports, and suggestions are welcome. This is a hobby project I maintain in my free time.
